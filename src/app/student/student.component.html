@@ -1,0 +1,21 @@
+<p>student works!</p>
+<table >
+  <tr>
+      <td>id</td>
+      <td>name</td>
+      <td>email</td>
+      <td>gender</td>
+  </tr>
+  <tr *ngFor="let e of studentlist; let i = index">
+      <td>{{e.id}}</td>
+      <td>{{e.name}}</td>
+      <td>{{e.email}}</td>
+      <td>{{e.gender}}</td>
+      <td><a  class="btn btn-primary" [routerLink]="['showStudent',e.id]"
+        >Show Student</a></td>
+
+
+  </tr>
+</table>
+<a  class="btn btn-primary" [routerLink]="['addStudent']"
+>Add Student</a>

@@ -1,0 +1,17 @@
+<p>show-student works!</p>
+<ul>
+  <div *ngFor="let s of studentlist; let i = index">
+    <div *ngIf="id == s.id">
+      <li>
+        {{ s.name }}
+      </li>
+      <li>
+        {{ s.email }}
+      </li>
+      <li>
+        {{ s.gender }}
+      </li>
+    </div>
+  </div>
+</ul>
+
